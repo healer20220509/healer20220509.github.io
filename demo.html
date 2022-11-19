@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>下拉菜单</title>
+	<link rel="stylesheet" href="css/fanzhuanxiaoguo.css">
+<style type="text/css">
+	body,ul{
+		margin: 0px;
+		padding: 0;
+	}
+	ul{
+		list-style: none;
+	}
+	a{
+	 	text-decoration: none;
+	}
+	.clearfix::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+	.menu{
+		width: 100%;
+		height: 60px;
+		background-color: #fd6a88;
+		
+	}	
+	.menu .menu-con{
+		width:1000px;
+		height: 60px;
+		/*background-color: aqua;*/
+		margin: 0px auto; 
+	}
+	.menu .menu-con ul{
+		/*border: 2px solid red;*/
+	}
+	.menu .menu-con ul li{
+		//*border: 2px solid blue;*/
+		width: 100px;
+		height: 60px;
+		float: left;
+		position: relative;
+	}
+	.menu .menu-con ul li a{
+		height: 60px;
+		display: block;
+		padding: 0px 40px;
+		line-height: 60px;
+		color: #fff;
+	}
+	.menu .menu-con ul li:hover{
+		background-color: #ee4d75;
+	}
+	.menu .menu-con ul li div{
+		width: 200px;
+		/*height: 400px;*/
+		background-color: #fd6a88;
+		position: absolute;
+		left: 50%;
+		margin-left: -100px;
+		top: 60px;
+		display: none;
+	}
+	.menu .menu-con ul li div a{
+		height: 40px;
+		line-height: 40px;
+		padding: 0;
+		text-align: center;
+		font-size: 14px;
+	}
+	.menu .menu-con ul li div a:hover{
+		background-color: #ee4d75;
+	}
+	.menu .menu-con ul li:hover div{
+		display: block;
+	}
+	
+	
+	
+	ul{
+		list-style: none;
+	}
+	.column{
+		width: 1000px;
+		/*height: 1500px;
+		border: 2px solid red;*/
+		margin: 30px auto 0px;
+		
+		
+	}
+	.column1{
+		/*border: 2px solid #000;*/
+	}
+	.column1-1{
+		width: 700px;
+		height: 300px;
+		background-color: brown;
+		float: left;
+	}
+	.column1-2{
+		width: 280px;
+		height: 300px;
+		background-color:cornflowerblue;
+		float: right;
+	}
+	.clear{
+		clear: both;
+	}
+	.column2{
+		/*border: 2px solid blue;*/
+		margin-top: 20px;
+	}
+	.column2-1{
+		width: 200px;
+		height: 300px;
+		background-color: aqua;
+		float: left;
+	}
+	.column2-2{
+		width: 400px;
+		height: 300px;
+		/*background-color:blueviolet;*/
+		float: left;
+		margin-left: 20px;
+		/*position:relative;*/
+	}
+	.column2-3{
+		width: 360px;
+		height: 300px;
+		background-color:chartreuse;
+		float: right;
+	}
+	.clearfix::after{
+		display: block;
+		clear: both;
+	}
+	.column-n{
+		/*border: 2px solid green;*/
+		margin-top: 20px;
+	}
+	.column-n ul{
+		background-color: green;
+	}
+	.column-n ul li{
+		/*border: 1px solid red;*/
+		width: 190px;
+		height: 200px;
+		float: left;
+		background-color:darkseagreen;
+		margin: 5px;
+	}
+</style>
+</head>
+<body>
+	<div class="menu">
+		<div class="menu-con">
+			<ul class="clearfix">
+				<li><a href="#">我的首页</a>
+					<div>
+						<a href="#">我的音乐</a>
+						<a href="#">我的照片</a>
+						<a href="#">我的故事</a>
+						<a href="#">我的记录</a>
+					</div>
+				</li>
+				<li><a href="#">我的游戏</a>
+					<div>
+						<a href="#">王者荣耀</a>
+						<a href="#">QQ飞车</a>
+						<a href="#">穿越火线</a>
+						<a href="#">英雄联盟</a>
+					</div>
+				</li>
+				<li><a href="#">我的朋友</a>
+					<div>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
+				</li>
+				<li><a href="#">我的青春</a>
+					<div>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
+				</li>
+				<li><a href="#">我的印记</a>
+					<div>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
+				</li>
+				<li><a href="#">我的爱好</a>
+					<div>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="column">
+		<div class="column1">
+			<div class="column1-1"></div>
+			<div class="column1-2"></div>
+			<div class="clear"></div>
+		</div>
+	
+		<div class="column2 clearfix">
+			<div class="column2-1"></div>
+			<div class="column2-2">
+				<div class="scene">
+					<div class="box">
+					<div class="box-front">
+			  			<img src="images/2.jpeg" width="400px" height="300px"/>
+					</div>
+		  			<div class="box-mid"></div>
+					<div class="box-back">人们总爱用鲜花，掌声迎接成功者，但须知成功的路上坎坷，荆棘，崎岖，有人爱用责怪，嘲笑对待失败者，但须知失败中包藏着希望，孕育着胜利。</div>
+		</div>
+				</div>
+			</div>
+			<div class="column2-3"></div>
+		</div>
+		
+		<div class="column-n">
+			<ul class="clearfix">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+		margin: 0;
+	}	
+	.scene{
+		width: 400px;
+		height: 300px;
+		/*border: 2px solid #E63134;*/
+		/*margin: 100px auto 0px;*/
+		perspective: 800px;  /*透视*/
+	}
+	.scene .box{
+		width: 400px;
+		height: 300px;
+		background-color: yellow;
+		transition: all ease 1s;    /*过度动画 all代表所有  ease过度时间1s*/
+		position:relative;			 /*相对定位*/
+		transform-style: preserve-3d;
+	}
+	.scene:hover .box{
+		transform:rotateY(-180deg)
+	}
+	.box .box-front{
+		width: 400px;
+		height: 300px;
+		background-color: aqua;
+		position: absolute;			 /*绝对定位*/
+		left: 0px;
+		top: 0px;
+		z-index: 2;
+	}
+	.box .box-mid{
+		width: 400px;
+		height: 300px;
+		background-color: rgba(0,0,0,0.5);
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform: translateZ(-1px);  /*黑影*/
+	}
+	.box .box-back{
+		width: 200px;
+		height: 200px;
+		background-image: linear-gradient(to bottom right,pink,#fff,skyblue); /*渐变颜色设置*/
+		position: absolute;			 /*绝对定位*/
+		left: 50%;
+		margin-left: -100px;
+		top:50%;
+		margin-top: -100px;
+		transform:translateZ(-100px) rotateY(-180deg);
+		font-size: 14px;
+		line-height: 25px;
+		padding: 20px;
+		box-sizing: border-box;
+	}
