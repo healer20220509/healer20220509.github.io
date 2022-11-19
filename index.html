@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/fanzhuanxiaoguo.css">
+<style type="text/css">
+	boby,ul{
+		margin: 0;
+		padding: 0;
+	}
+	ul{
+		list-style: none;
+	}
+	.column{
+		width: 1000px;
+		/*height: 1500px;
+		border: 2px solid red;*/
+		margin: 30px auto 0px;
+		
+	}
+	.column1{
+		/*border: 2px solid #000;*/
+	}
+	.column1-1{
+		width: 700px;
+		height: 300px;
+		background-color: brown;
+		float: left;
+	}
+	.column1-2{
+		width: 280px;
+		height: 300px;
+		background-color:cornflowerblue;
+		float: right;
+	}
+	.clear{
+		clear: both;
+	}
+	.column2{
+		/*border: 2px solid blue;*/
+		margin-top: 20px;
+	}
+	.column2-1{
+		width: 200px;
+		height: 300px;
+		background-color: aqua;
+		float: left;
+	}
+	.column2-2{
+		width: 400px;
+		height: 300px;
+		/*background-color:blueviolet;*/
+		float: left;
+		margin-left: 20px;
+		/*position:relative;*/
+	}
+	.column2-3{
+		width: 360px;
+		height: 300px;
+		background-color:chartreuse;
+		float: right;
+	}
+	.clearfix::after{
+		display: block;
+		clear: both;
+	}
+	.column-n{
+		/*border: 2px solid green;*/
+		margin-top: 20px;
+	}
+	.column-n ul{
+		background-color: green;
+	}
+	.column-n ul li{
+		/*border: 1px solid red;*/
+		width: 190px;
+		height: 200px;
+		float: left;
+		background-color:darkseagreen;
+		margin: 5px;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="column">
+		<div class="column1">
+			<div class="column1-1"></div>
+			<div class="column1-2"></div>
+			<div class="clear"></div>
+		</div>
+	
+		<div class="column2 clearfix">
+			<div class="column2-1"></div>
+			<div class="column2-2">
+				<div class="scene">
+					<div class="box">
+					<div class="box-front">
+			  			<img src="images/2.jpeg" width="400px" height="300px"/>
+					</div>
+		  			<div class="box-mid"></div>
+					<div class="box-back">人们总爱用鲜花，掌声迎接成功者，但须知成功的路上坎坷，荆棘，崎岖，有人爱用责怪，嘲笑对待失败者，但须知失败中包藏着希望，孕育着胜利。</div>
+		</div>
+				</div>
+			</div>
+			<div class="column2-3"></div>
+		</div>
+		
+		<div class="column-n">
+			<ul class="clearfix">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
